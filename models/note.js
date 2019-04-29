@@ -1,4 +1,4 @@
-// ------------------------------------------------------------------------- setup/vars
+
 'use strict';
 const mongoose = require('mongoose'),
       uniqueValidator = require('mongoose-unique-validator');
@@ -16,11 +16,11 @@ const NoteSchema = new Schema({
   }
 });
 
-// ------------------------------------------------------------------------- validator
+
 NoteSchema.plugin(uniqueValidator);
 
-// ------------------------------------------------------------------------- create the model
+
 const Note = mongoose.model("Note", NoteSchema);
 
-// ------------------------------------------------------------------------- now export it
+
 module.exports = Note;

@@ -28,7 +28,7 @@ router.get('/', function(req, res) {
         });
 });
 
-// saved articles
+// saved articles//
 router.get('/saved', function(req, res) {
     Article
         .find({})
@@ -52,7 +52,7 @@ router.get('/saved', function(req, res) {
         });
 });
 
-// require controllers
+// require controllers//
 router.use('/api', require('./api'));
 
 module.exports = router;

@@ -36,11 +36,11 @@ const ArticleSchema = new Schema({
   }]
 });
 
-// ------------------------------------------------------------------------- validator
+
 ArticleSchema.plugin(uniqueValidator);
 
-// ------------------------------------------------------------------------- create the model
+
 const Article = mongoose.model("Article", ArticleSchema);
 
-// ------------------------------------------------------------------------- now export it
+
 module.exports = Article;
